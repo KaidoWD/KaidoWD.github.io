@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kaido</title>
+    <p id="game"></p>
+</head>
+<body>
+<div><script>
+	
+	var a=(prompt('what is your gender?'));
+    	if(a=="female"){
+    		document.write("Hello baby!")
+    	}
+    	else{
+    		document.write("hello");
+    	}</script></div>
+<div><script>
+    var time=(prompt('what is the time?'));
+        if (time<10) {
+        	document.write('Good moring!');
+        } 
+        else if(time<18){
+        	document.write('Good day!');
+        }
+        else{
+        	document.write('Good evening!');
+	    }
+	    
+</script></div>
+<div><script>var player=prompt('Rock, paper, scissors.what is your choice?');
+var computer=Math.random();
+if(computer<0.34){
+    computer = 'rock';
+}
+else if(computer >=0.34 && computer <= 0.66){
+         computer = 'paper';
+}else{
+    computer = 'scissors';
+}
+
+if(player == 'rock'){
+     if(computer == 'paper'){
+          document.write('computer wins!');}
+     else if(computer == 'scissors'){
+          document.write('player wins!');}
+     else{
+          document.write('it is a tie game!');
+}
+}
+
+if(player == 'paper'){
+    if(computer == 'rock'){
+        document.write('player wins');}
+    else if(computer == 'scissors'){
+        document.write('computer wins');}
+    else{
+        document.write('tie game');
+    }
+    }
+
+
+if(player == 'scissors'){
+     if(computer == 'rock'){
+         document.write('computer wins');}
+     else if(computer == 'paper'){
+         document.write('player wins');}
+     else{
+         document.write('tie game');
+     
+     }
+}
+
+</script></div>
+<div><script>
+    function getRandom(min,max){return Math.floor(Math.random()*(max-min+1))+min;}
+    var random=getRandom(1,10);
+    var i=0;
+    while(i++<3){
+        var num=prompt('Guess a number between 1-10.');
+        if(num>random){
+            alert('Too big!');
+        }else if(num<random){
+            alert('Too small!');
+        }else{alert('Bingo!');break;
+    }
+}
+</script></div>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<div><script>
+    var furit=['banana','watermelon','apple','cherry','orange'];
+    var i;
+    var txt='';
+    for(i of furit){txt+=i+'<br>';}
+        document.getElementById('demo').innerHTML=txt;
+    const cars = ["BMW", "Toyota", "Saab", "Ford", "Mercedes", "Audi"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo2").innerHTML = text;
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script></div>
+
+
+<center><button onclick='password()'>Set your password!</button></center>
+<p id="password"></p>
+<div><script>
+    function password(){
+    var p=prompt("Set your password!");
+    var l=p.length;
+    if (l>8||p.indexOf('!')!=-1) {
+        alert('Your password is invalid,because it is either over 8 characters or having!');
+    } 
+    else {
+        alert('Password created successfully!');
+        }}
+
+</script></div>
+
+</body> 
+</html>
